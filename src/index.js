@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { ConnectedRouter, routerMiddleware } from 'connected-react-router';
 import { Provider } from 'react-redux';
@@ -15,7 +15,9 @@ import './index.scss';
 
 // Screens
 import LoadingOverlay from 'react-loading-overlay';
-import HomeScreen from './scenes/Home/home-screen';
+import HomeScreen from './screens/Home/home-screen';
+import AboutScreen from './screens/About/about-screen';
+import NotFoundScreen from './screens/NotFound/not-found.screen';
 
 const initialState = {};
 const history = createBrowserHistory();
@@ -46,7 +48,9 @@ ReactDOM.render(
     <Provider store={configureStore(initialState)}>
       <ConnectedRouter history={history}>
         <Switch>
+          <Route path="/about" component={AboutScreen} />
           <Route exact path="/" component={HomeScreen} />
+          <Route path="**" component={NotFoundScreen} />
         </Switch>
       </ConnectedRouter>
     </Provider>

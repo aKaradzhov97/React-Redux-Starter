@@ -1,6 +1,16 @@
 {
+  "general": {
+    "header": {
+      "title": "React, Redux starter project!"
+    }
+  },
   "home_screen": {
-    "title": "Welcome to this awesome React Redux starter!"
+    "title": "Welcome to this awesome React Redux starter!",
+    "go_about_link": "Go to about screen!"
+  },
+  "about_screen": {
+    "title": "You're on About page!",
+    "go_home_link": "Go home!"
   },
   "not_found_screen": {
     "heading": "Oops!",

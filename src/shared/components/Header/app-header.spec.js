@@ -1,18 +1,13 @@
 import React from 'react';
 import AppHeader from './app-header';
-import { act, create } from 'react-test-renderer';
+import { render } from '../../../tests/test-utils';
 
-let root;
-describe('App Header component', () => {
-  beforeEach(() => {
-    act(() => {
-      root = create(<AppHeader />);
-    });
-  });
-
+describe('AppHeader', () => {
   describe('Rendering', () => {
     it('should render the component', () => {
-      expect(root.toJSON()).toMatchSnapshot();
+      const { container } = render(<AppHeader />);
+
+      expect(container.querySelector('body section')).toMatchSnapshot();
     });
   });
 });

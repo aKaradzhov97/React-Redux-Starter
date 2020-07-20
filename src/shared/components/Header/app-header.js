@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { withTranslation } from 'react-i18next';
 
-export default class AppHeader extends Component {
+class AppHeader extends Component {
   render = () => {
+    const { t } = this.props;
     return (
       <header>
-        <h2>React , Redux starter!</h2>
+        <h2>{t('header.title')}</h2>
       </header>
     );
   };
 }
+
+export default withTranslation('general')(AppHeader);

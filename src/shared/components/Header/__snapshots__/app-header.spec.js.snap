@@ -1,9 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App Header component Rendering should render the component 1`] = `
-<header>
-  <h2>
-    React , Redux starter!
-  </h2>
-</header>
-`;
+exports[`AppHeader Rendering should render the component 1`] = `null`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen Rendering should render the component with initial state 1`] = `
+<section>
+  <h1>
+    home_screen.title
+  </h1>
+  <a
+    href="/about"
+  >
+    home_screen.go_about_link
+  </a>
+</section>
+`;

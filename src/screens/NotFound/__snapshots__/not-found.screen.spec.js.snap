@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Not Found screen Rendering should render the component 1`] = `
+exports[`NotFoundScreen Rendering should render the component with initial state 1`] = `
 <section>
   <h1>
     not_found_screen.heading
