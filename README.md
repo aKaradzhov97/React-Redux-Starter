@@ -1,4 +1,4 @@
-![CI/CD](https://github.com/aKaradzhov97/React-Redux-Starter/workflows/CI/CD/badge.svg)
+![CI/CD](https://github.com/aKaradzhov97/React-Redux-Starter/workflows/CI/CD/badge.svg?branch=master)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
