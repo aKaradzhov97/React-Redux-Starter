@@ -1,3 +1,5 @@
+![CI/CD](https://github.com/aKaradzhov97/React-Redux-Starter/workflows/CI/CD/badge.svg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
